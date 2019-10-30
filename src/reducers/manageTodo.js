@@ -3,7 +3,7 @@ export default function manageTodo(state = {
 }, action) {
 
   console.log("reducer received this action:", action);
-  debugger
+
   switch (action.type) {
     case "ADD_TODO":
       return {
