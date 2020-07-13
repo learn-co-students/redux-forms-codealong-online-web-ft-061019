@@ -5,6 +5,7 @@ import manageTodo from './reducers/manageTodo';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+
 let store = createStore(manageTodo);
 
 ReactDOM.render(
@@ -13,3 +14,9 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+/*
+Just below the import statements, you can see that we create the store using 
+createStore, provided by redux. Then, further down, we pass the store 
+into the Provider. This will allow us access when we connect our components.
+*/
